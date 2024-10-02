@@ -5,11 +5,12 @@ shoppinglist = []
 
 # Funktion um ein Item der Liste hinzuzufügen
 def add_item(item):
+    # item = input("Bitte gib den Artikel ein, der zur Einkaufsliste hinzugefügt werden soll: ")
     shoppinglist.append(item)
     print(f"Der Artikel {item} wurde der Einkaufsliste hinzugefügt")
 
 # Aufruf der Funktion add_item
-add_item(input("Bitte gib den Artikel ein, der zur Einkaufsliste hinzugefügt werden soll: "))
+# add_item(input("Bitte gib den Artikel ein, der zur Einkaufsliste hinzugefügt werden soll: "))
 
 # Funktion um die EInkaufsliste anzuzeigen
 def show_shoppinglist():
@@ -21,4 +22,21 @@ def show_shoppinglist():
         print("Deine Einkaufliste ist leer")
 
 # Aufruf der Funktion show_shoppinglist
-show_shoppinglist()
+# show_shoppinglist()
+
+# Main Function
+while 1 == 1:
+    print("----- Einkaufsliste -----")
+    print("1. Artikel zur Einkaufsliste hinzufügen")
+    print("2. Einkaufsliste anzeigen")
+    print("3. Programm beenden")
+    choice = input("Bitte wähle aus was du machen möchtest: ")
+    if choice == "1":
+        add_item(input("Bitte gib den Artikel ein, der zur Einkaufsliste hinzugefügt werden soll: "))
+    elif choice == "2":
+        show_shoppinglist()
+    elif choice == "3":
+        print("Programm wird beendet! Auf Wiedersehen.")
+        break
+    else:
+        print("Ungültige Auswahl. Bitte wähle 1, 2 oder 3")
