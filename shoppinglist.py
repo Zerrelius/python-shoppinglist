@@ -6,7 +6,8 @@ shoppinglist = []
 # Funktion um ein Item der Liste hinzuzufügen
 def add_item():
     item = input("Bitte gib den Artikel ein, der zur Einkaufsliste hinzugefügt werden soll: ")
-    shoppinglist.append(item)
+    if item:
+        shoppinglist.append(item)
     print(f"Der Artikel {item} wurde der Einkaufsliste hinzugefügt")
 
 # Aufruf der Funktion add_item
