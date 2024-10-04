@@ -8,7 +8,9 @@ def add_item():
     item = input("Bitte gib den Artikel ein, der zur Einkaufsliste hinzugefügt werden soll: ")
     if item:
         shoppinglist.append(item)
-    print(f"Der Artikel {item} wurde der Einkaufsliste hinzugefügt")
+        print(f"Der Artikel {item} wurde der Einkaufsliste hinzugefügt")
+    else:
+        print("Eingabe war leer und daher wird kein Artikelt hinzugefügt.")
 
 # Aufruf der Funktion add_item
 # add_item(input("Bitte gib den Artikel ein, der zur Einkaufsliste hinzugefügt werden soll: "))
