@@ -27,7 +27,7 @@ def show_shoppinglist():
 # Main Function
 def main():
     while 1 == 1:
-        print("----- Einkaufsliste -----")
+        print("\n----- Einkaufsliste -----")
         print("1. Artikel zur Einkaufsliste hinzufügen")
         print("2. Einkaufsliste anzeigen")
         print("3. Programm beenden")
